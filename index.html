@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TheSunReborn — Celestial Healing Frequencies</title>
+  <meta name="description" content="TheSunReborn — Celestial healing frequencies, sacred geometry, and chakra alignment for metaphysical wellness." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#1a0033">
+  <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="inner">
+      <a class="logo" href="#hero" aria-label="TheSunReborn home">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/226a368d-648b-4d44-9dbf-85cdb0d04440.png" alt="" width="48" height="48">
+        <span>TheSunReborn</span>
+      </a>
+
+      <nav class="site-nav" role="navigation" aria-label="Primary">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" tabindex="-1" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title">TheSunReborn</h1>
+        <p class="tagline">Celestial Healing Frequencies • Rebirth Through Sacred Energy</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="inner">
+        <img class="avatar" src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/226a368d-648b-4d44-9dbf-85cdb0d04440.png" alt="Founder avatar">
+        <h2>Our Mission</h2>
+        <p>TheSunReborn harnesses cosmic frequencies, sacred geometry, and chakra alignment for metaphysical wellness. Rooted in biohacking and energy work, we guide your rebirth to higher consciousness and balanced living.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="inner">
+        <h2>Healing Offerings</h2>
+        <div class="services-grid" role="list">
+          <article class="service-card" role="listitem">
+            <h3>Frequency Sessions</h3>
+            <p>Custom sound healing with 432Hz and solfeggio frequencies for chakra balancing.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <h3>Sacred Geometry Apps</h3>
+            <p>Android tools for daily merkaba activation and fibonacci resonance meditations.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <h3>Biohacking Protocols</h3>
+            <p>EMF protection, light therapy, and quantum alignment techniques for passive wellness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="inner">
+        <h2>Connect for Healing</h2>
+
+        <!-- Netlify-friendly static form (works on Netlify). If you prefer a server, I'll add instructions. -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden"><label>Don’t fill if human: <input name="bot-field"></label></p>
+
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Energy</button>
+        </form>
+
+        <p class="small">Prefer email? Reach us at: <a href="mailto:hello@thesunreborn.example">hello@thesunreborn.example</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="inner">
+      <p>&copy; 2025 TheSunReborn. All frequencies reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // small nav toggle for mobile
+    (function () {
+      const btn = document.getElementById('nav-toggle');
+      const menu = document.getElementById('primary-menu');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }());
+  </script>
+</body>
+</html>
