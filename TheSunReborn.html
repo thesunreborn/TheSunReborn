@@ -1,1 +1,98 @@
 Page Under Construction
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSunReborn - Celestial Healing Frequencies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Playfair Display', serif; background: linear-gradient(135deg, #1a0033, #ff6b35, #f7931e); min-height: 100vh; overflow-x: hidden; }
+        header { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Cinzel', serif; font-size: 1.5rem; color: #ffd700; text-shadow: 0 0 10px #ffd700; }
+        .logo img { width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 20px #ffd700; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: white; text-decoration: none; font-weight: 700; transition: color 0.3s; }
+        nav a:hover { color: #ffd700; }
+        #hero { height: 100vh; background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/01e4bc1f-8f6a-4d35-befe-aa12fcba68b7.png'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; text-shadow: 0 0 20px rgba(255,215,0,0.8); position: relative; }
+        #hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(255,215,0,0.3), transparent); animation: pulse 3s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+        h1 { font-family: 'Cinzel', serif; font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 1rem; }
+        .section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .about { background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); text-align: center; }
+        .avatar { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 2rem; box-shadow: 0 0 30px #ffd700; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .service-card { background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 15px; text-align: center; transition: transform 0.3s; }
+        .service-card:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(255,215,0,0.5); }
+        form { display: grid; gap: 1rem; max-width: 500px; margin: 0 auto; }
+        input, textarea, button { padding: 1rem; border: none; border-radius: 10px; font-family: inherit; }
+        button { background: linear-gradient(45deg, #ffd700, #ff6b35); color: #1a0033; font-weight: 700; cursor: pointer; transition: transform 0.3s; }
+        button:hover { transform: scale(1.05); }
+        footer { background: rgba(0,0,0,0.9); color: white; text-align: center; padding: 2rem; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; gap: 1rem; } }
+        /* Sacred geometry subtle bg */
+        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 80%, transparent 20%, rgba(255,215,0,0.03) 25%, transparent 30%), radial-gradient(circle at 80% 20%, transparent 20%, rgba(138,43,226,0.03) 25%, transparent 30%); pointer-events: none; z-index: -1; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/226a368d-648b-4d44-9dbf-85cdb0d04440.png" alt="TheSunReborn Logo">
+            TheSunReborn
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>TheSunReborn</h1>
+        <p>Celestial Healing Frequencies • Rebirth Through Sacred Energy</p>
+    </section>
+
+    <section id="about" class="section about">
+        <img class="avatar" src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/226a368d-648b-4d44-9dbf-85cdb0d04440.png" alt="Founder Avatar">
+        <h2>Our Mission</h2>
+        <p>TheSunReborn harnesses cosmic frequencies, sacred geometry, and chakra alignment for metaphysical wellness. Rooted in biohacking and energy work, we guide your rebirth to higher consciousness.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Healing Offerings</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Frequency Sessions</h3>
+                <p>Custom sound healing with 432Hz and solfeggio frequencies for chakra balancing.</p>
+            </div>
+            <div class="service-card">
+                <h3>Sacred Geometry Apps</h3>
+                <p>Android tools for daily merkaba activation and fibonacci resonance meditation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Biohacking Protocols</h3>
+                <p>EMF protection, light therapy, and quantum alignment for passive wellness.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Connect for Healing</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Energy</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TheSunReborn. All frequencies reserved. | Privacy Policy | Terms</p>
+    </footer>
+</body>
+</html>
